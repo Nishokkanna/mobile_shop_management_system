@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-ibm-gray-30;
+  }
+  body {
+    @apply text-ibm-gray-100 antialiased;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-ibm-blue-600 to-ibm-blue-700 hover:from-ibm-blue-700 hover:to-ibm-blue-800 text-white px-6 py-2.5 rounded-lg transition-all duration-200 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply bg-gradient-to-r from-ibm-gray-70 to-ibm-gray-80 hover:from-ibm-gray-80 hover:to-ibm-gray-90 text-white px-6 py-2.5 rounded-lg transition-all duration-200 font-semibold shadow-md hover:shadow-lg;
+  }
+  .btn-edit {
+    @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-all duration-200 font-semibold shadow-md hover:shadow-lg flex items-center gap-2;
+  }
+  .btn-delete {
+    @apply bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full transition-all duration-200 font-semibold shadow-md hover:shadow-lg flex items-center gap-2;
+  }
+  .btn-success {
+    @apply bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition-all duration-200 font-semibold shadow-md hover:shadow-lg flex items-center gap-2;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-lg border border-ibm-gray-20 p-6 transition-all duration-300 hover:shadow-xl;
+  }
+  .input-field {
+    @apply w-full px-4 py-2.5 border-2 border-ibm-gray-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-ibm-blue-500 focus:border-ibm-blue-500 transition-all duration-200 bg-white;
+  }
+  .table-header {
+    @apply bg-gradient-to-r from-ibm-gray-10 to-ibm-gray-20 text-ibm-gray-100 font-bold text-xs uppercase tracking-wider;
+  }
+  .product-card {
+    @apply bg-white rounded-2xl shadow-lg border-2 border-transparent hover:border-ibm-blue-400 transition-all duration-300 overflow-hidden hover:shadow-2xl transform hover:-translate-y-1;
+  }
+  .stat-card {
+    @apply bg-gradient-to-br from-white to-ibm-gray-10 rounded-2xl shadow-lg border border-ibm-gray-20 p-6 transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-1;
+  }
+}

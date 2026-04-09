@@ -1,0 +1,17 @@
+  useEffect(() => {
+    const storedProducts = localStorage.getItem('products')
+    const storedSales = localStorage.getItem('sales')
+    if (storedProducts) setProducts(JSON.parse(storedProducts))
+    if (storedSales) setSales(JSON.parse(storedSales))
+  }, [])
+
+  const saveProducts = (newProducts: Product[]) => {
+    setProducts(newProducts)
+    localStorage.setItem('products', JSON.stringify(newProducts))
+  }
+
+  const saveSales = (newSales: Sale[]) => {
+    setSales(newSales)
+    localStorage.setItem('sales', JSON.stringify(newSales))
+  }
+
