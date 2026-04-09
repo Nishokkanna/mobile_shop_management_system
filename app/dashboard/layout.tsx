@@ -1,14 +1,8 @@
 'use client'
-import { useEffect, useState, createContext, useContext } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Sidebar from '@/components/Sidebar'
-
-const SidebarContext = createContext({
-  isOpen: true,
-  toggleSidebar: () => {},
-})
-
-export const useSidebar = () => useContext(SidebarContext)
+import { SidebarContext } from './sidebar-context'
 
 export default function DashboardLayout({
   children,

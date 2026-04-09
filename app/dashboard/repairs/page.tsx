@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Header from '@/components/Header'
-import { useSidebar } from '../layout'
+import { useSidebar } from '../sidebar-context'
 import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import { supabase } from '@/lib/supabase'

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import Header from '@/components/Header'
 import StatCard from '@/components/StatCard'
-import { useSidebar } from './layout'
+import { useSidebar } from './sidebar-context'
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { supabase } from '@/lib/supabase'
 
